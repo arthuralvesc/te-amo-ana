@@ -47,3 +47,20 @@ body, html {
     font-size: 1.5em;
 }
 
+@media (min-width: 768px) {
+    .main {
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+        animation: scrollBackgroundDesktop 20s linear infinite;
+    }
+
+    @keyframes scrollBackgroundDesktop {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -100vw 0;
+        }
+    }
+}
+
